@@ -21,12 +21,12 @@ import { Trip } from "@/types/Site";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB-tCzprHoCInoK8da8mnnEM2ZAvqPZ4sk",
-  authDomain: "trip-points-5d488.firebaseapp.com",
-  projectId: "trip-points-5d488",
-  storageBucket: "trip-points-5d488.appspot.com",
-  messagingSenderId: "1059304583120",
-  appId: "1:1059304583120:web:930bfa29edb6d9bf5c13d5",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 async function findWithQuery<T>(
