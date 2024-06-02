@@ -48,5 +48,7 @@ And then start the server using:
 npm start
 ```
 
+The project automatically deploys changes to the `main` branch to [Vercel](https://vercel.com/).
+
 The project is currently live at
  [https://trip-points-project.vercel.app/](https://trip-points-project.vercel.app/).
